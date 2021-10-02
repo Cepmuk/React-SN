@@ -1,0 +1,10 @@
+.profile {
+    grid-area: p;
+    background-color: greenyellow;
+  }
+  
+  .profile img {
+    max-width: 1200px;
+    max-height: 200px;
+    overflow: hidden;
+  }

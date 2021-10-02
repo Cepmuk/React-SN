@@ -1,0 +1,9 @@
+.post {
+    color: rgb(47, 130, 255);
+  }
+  
+  .post img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+  }
