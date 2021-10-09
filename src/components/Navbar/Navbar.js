@@ -4,32 +4,32 @@ const Navbar = () => {
     return (
         <nav className={s.nav}>
 
-            <div className={s.item}>
-                <a>
+            <div>
+                <a href='/profile'>
                     Profile
                 </a>
             </div>
 
-            <div className={`${s.item} ${s.active}`}>
-                <a>
-                    Mesages
+            <div>
+                <a href='/messages'>
+                    Messages
                 </a>
             </div>
 
-            <div className={s.item}>
-                <a>
+            <div>
+                <a href='/news'>
                     News
                 </a>
             </div>
 
-            <div className={s.item}>
-                <a>
+            <div>
+                <a href='/music'>
                     Music
                 </a>
             </div>
 
-            <div className={s.item}>
-                <a>
+            <div>
+                <a href='/settings'>
                     Settings
                 </a>
             </div>

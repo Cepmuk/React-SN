@@ -2,11 +2,3 @@
     grid-area: n;
     background-color: rgba(26, 26, 160, 0.479);
   }
-
-.item {
-    color: white
-}
-
-.active {
-    color: gold
-}
