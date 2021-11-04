@@ -1,0 +1,14 @@
+.profile img {
+  max-width: 1200px;
+  max-height: 200px;
+  overflow: hidden;
+  width: 100%;
+}
+
+h3 {
+  color: blue;
+}
+
+.Description{
+  padding: 10px;
+}
