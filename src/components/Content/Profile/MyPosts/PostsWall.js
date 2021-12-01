@@ -1,11 +1,13 @@
 import s from './PostsWall.module.css'
 import Post from './Post/Post'
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+
+    let postElement = props.posts.map(p => <Post message={p.postMessage} likesCounter={p.likesCounter} />)
+
     return (
         <div className={s.PostsWall}>
-            <Post message='New post' likesCounter='10'/>
-            <Post message='My first post' likesCounter='42'/>
+            {postElement}
         </div>
 
     )

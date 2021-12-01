@@ -3,24 +3,20 @@ import Dialogue from './Dialoogue/Dialogue'
 import Message from './Message/Message'
 
 
-const Messages = () => {
+const Messages = (props) => {
+    let dialogueElement = props.dialogues.map(d => <Dialogue id={d.id} name={d.name} />)
+    let mesageElement = props.messages.map(m => <Message message={m.message} />)
+
+
     return (
         <div className={s.messages}>
-            
+
             <div className={s.dialogueList}>
-                <Dialogue id='1' name='Sergey' />
-                <Dialogue id='2' name='Julia' />
-                <Dialogue id='3' name='Jana' />
-                <Dialogue id='4' name='Kirill' />
+                {dialogueElement}
             </div>
 
             <div className={s.messageList}>
-                <Message message='Hi' />
-                <Message message='Hello' />
-                <Message message='Privet' />
-                <Message message='My name is' />
-                <Message message='Hello world' />
-
+                {mesageElement}
             </div>
         </div>
     )
