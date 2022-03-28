@@ -10,7 +10,7 @@ const App = (props) => {
       <BrowserRouter>
         <Header />
         <Navbar />
-        <Content posts={props.posts} dialogues={props.dialogues} messages={props.messages} />
+        <Content profilePage={props.profilePage} messagesPage={props.messagesPage} />
       </BrowserRouter>
     </div>
   )
